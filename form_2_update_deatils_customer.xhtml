@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+			<link rel="stylesheet" type="text/css" href="file.css" />
+			<script src="filetwo.js"> </script>
+	</head>
+	<body style="background-color:powderblue;">‏
+		<div class="navbar">
+			<a href="index.xhtml">דף הבית</a>
+			<div class="dropdown">
+			  
+
+			  	<button class="dropbtn">דפי האתר 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="FIrst_page.xhtml">דגמי רכבים</a>
+					<a href="Second_page.xhtml">כתבות וסיקורי רכבים </a>
+					<a href="PageFive.xhtml">סרטוני רכבים</a>
+					<a href="third_page.xhtml">תיאור מוסכי מורשה</a>
+					<a href="page_four.xhtml">דירוג רכבים ומוסכים מורשים </a>
+					<a href="PageSix.xhtml">נתוני מזג אוויר</a>
+			  </div> 
+			  </div>
+				<div class="dropdown">
+					<button class="dropbtn">טפסים 
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="form1_insert_details.xhtml">הכנסת פרטי לקוח חדש</a>
+					<a href="form_2_update_deatils_customer.xhtml">עדכון פרטי לקוח קיים</a>
+					<a href="form3_delete_customer_details.xhtml">מחיקת פרטי לקוח קיים</a>
+					<a href="form4_reading_data_cars.xhtml">קבלת תוצאות של רכבים</a>
+					<a href="form5_reading_data_licensed_garages.xhtml">קבלת תוצאות של מוסכי מורשה</a>
+
+			  </div> 
+			  </div>
+		</div>
+	<h1>טופס שני - עדכון פרטי לקוח קיים  </h1>
+	<hr/>
+	<form action = "Update_details_customer.php"  method = "POST">
+			<h1 style = "text-align:right;">פרטי לקוח</h1>
+			<h4 style = "text-align:right;">נא עדכן בבקשה את פרטייך בטופס  </h4>
+			
+			<label class = "required">תעודת זהות :   </label> <br/> 
+			<input type="text" name="Id" required = "required" onkeyup="charcountupdate(this.value)"  /><br/> 
+			<span id="charcount"> </span><br/>
+			
+			<label class="required" >גיל : </label> <br/>
+			<input type="text"  name="age" required = "required" onkeyup="charcountupdatetwo(this.value)" /><br/>
+			<span id="charcounttwo"> </span><br/>
+			
+			<label class="required">סטטוס זוגי :   </label> <br/> 
+			<input type="text"  name="Status" required = "required" onkeyup="charcountupdatethree(this.value)" /><br/> 
+			<span id="charcountthree"> </span><br/>
+
+			<label class="required" for="budget_range">תקציב מקסימלי : </label> <br/>
+			<input type="number" id="budget_range" name="Max_budget" required = "required" min="0" max="10000000" step="1" value="0" onkeyup="charcountupdatefour(this.value)"/> <br/>
+			<span id="charcountfour"> </span><br/>
+			
+			<label class="required">מחוז מגורים :   </label> <br/> 
+			<input type="text"  name="Living_area" required = "required" onkeyup="charcountupdatefive(this.value)"/><br/> 
+			<span id="charcountfive"> </span><br/>
+			
+			<label class="required">תפקיד בעבודה : </label> <br/>
+			<input type="text"  name="Position_in_work" required = "required" onkeyup="charcountupdatesix(this.value)" /><br/><br/>
+			<span id="charcountsix"> </span><br/>
+	
+			<input type="submit" value="עדכון"/>
+			<input type="reset" value="איפוס"/>	
+					
+			<style>
+					.required:after {
+					 content:" *";
+					 color: red;
+					 }
+			</style>
+	</form>
+	<hr/>
+	</body>
+</html>

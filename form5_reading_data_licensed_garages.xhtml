@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+			<link rel="stylesheet" type="text/css" href="file.css" />
+			<script src="filetwo.js"> </script>
+	</head>
+	<body style="background-color:powderblue;">‏
+		<div class="navbar">
+			<a href="index.xhtml">דף הבית</a>
+			<div class="dropdown">
+			  
+
+			  	<button class="dropbtn">דפי האתר 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="FIrst_page.xhtml">דגמי רכבים</a>
+					<a href="Second_page.xhtml">כתבות וסיקורי רכבים </a>
+					<a href="PageFive.xhtml">סרטוני רכבים</a>
+					<a href="third_page.xhtml">תיאור מוסכי מורשה</a>
+					<a href="page_four.xhtml">דירוג רכבים ומוסכים מורשים </a>
+					<a href="PageSix.xhtml">נתוני מזג אוויר</a>
+			  </div> 
+			  </div>
+				<div class="dropdown">
+					<button class="dropbtn">טפסים 
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="form1_insert_details.xhtml">הכנסת פרטי לקוח חדש</a>
+					<a href="form_2_update_deatils_customer.xhtml">עדכון פרטי לקוח קיים</a>
+					<a href="form3_delete_customer_details.xhtml">מחיקת פרטי לקוח קיים</a>
+					<a href="form4_reading_data_cars.xhtml">קבלת תוצאות של רכבים</a>
+					<a href="form5_reading_data_licensed_garages.xhtml">קבלת תוצאות של מוסכי מורשה</a>
+
+			  </div> 
+			  </div>
+		</div>
+	<h1>טופס חמישי - קריאת תוצאות  </h1> 
+	<hr/>
+		<form name = "input" action="garages.php" method="POST">  
+			<h1 style = "text-align: right;">נא לרשום בבקשה שם של יצרן רכב אשר קיבלת בטופס הקודם כדי לקבל מוסכים מורשים מותאמים</h1>
+			<h4 style = "text-align: right;">נא הכנס בבקשה את פרטייך בטופס  </h4>
+			
+			<label>תעודת זהות :   </label> <br/> 
+			<input type="text"  name="id" onkeyup="charcountupdate(this.value)" /><br/> 
+			<span id="charcount"> </span><br/>
+			
+			<label>שם יצרן הרכב : </label> <br/>
+			<input type="text"  name="car_manufacturer_name" onkeyup="charcountupdatetwo(this.value)" /><br/>
+			<span id="charcounttwo"> </span><br/>
+			
+			<label>מחוז מגורים :   </label> <br/> 
+			<input type="text"  name="living_area" onkeyup="charcountupdatethree(this.value)"/><br/> <br/>
+			<span id="charcountthree"> </span><br/>
+			
+			<input type="submit" value="שליחה"/>
+			<input type="reset" value="איפוס"/>	
+	</form>
+	<hr/>
+	</body>
+</html>

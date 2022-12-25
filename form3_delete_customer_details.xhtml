@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+			<link rel="stylesheet" type="text/css" href="file.css" />
+			<script src="filetwo.js"> </script>
+	</head>
+	<body>‏
+		<div class="navbar">
+			<a href="index.xhtml">דף הבית</a>
+			<div class="dropdown">
+			  
+
+			  	<button class="dropbtn">דפי האתר 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="FIrst_page.xhtml">דגמי רכבים</a>
+					<a href="Second_page.xhtml">כתבות וסיקורי רכבים </a>
+					<a href="PageFive.xhtml">סרטוני רכבים</a>
+					<a href="third_page.xhtml">תיאור מוסכי מורשה</a>
+					<a href="page_four.xhtml">דירוג רכבים ומוסכים מורשים </a>
+					<a href="PageSix.xhtml">נתוני מזג אוויר</a>
+			  </div> 
+			  </div>
+				<div class="dropdown">
+					<button class="dropbtn">טפסים 
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="form1_insert_details.xhtml">הכנסת פרטי לקוח חדש</a>
+					<a href="form_2_update_deatils_customer.xhtml">עדכון פרטי לקוח קיים</a>
+					<a href="form3_delete_customer_details.xhtml">מחיקת פרטי לקוח קיים</a>
+					<a href="form4_reading_data_cars.xhtml">קבלת תוצאות של רכבים</a>
+					<a href="form5_reading_data_licensed_garages.xhtml">קבלת תוצאות של מוסכי מורשה</a>
+
+			  </div> 
+			  </div>
+		</div>
+	<h1>טופס שלישי - מחיקת פרטי לקוח  </h1>
+	<hr/>
+	<form action = "Delete_customer.php" method ="POST">
+			<h4 style = "text-align: right;">הכנס בבקשה מספר תעודת זהות  </h4>
+			
+			<label>תעודת זהות : </label> <br/>
+			<input type="text" name="id" onkeyup="charcountupdate(this.value)" /><br/><br/>
+			<span id="charcount"> </span>
+			<br/><br/>
+			<input type="submit" value="מחיקה"/>
+			<input type="reset" value="איפוס"/>	
+	<hr/>
+	</form>
+	</body>
+</html>
