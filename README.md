@@ -7,4 +7,4 @@ The final project contains building a website using writing basic HTML and less 
 
 In addition, to the project will be attached a file that contains a guidance document.
 
-We open the website in this url : https://edenandtamir.000webhostapp.com/index.html
+We can open the website in this url : https://edenandtamir.000webhostapp.com/index.html
